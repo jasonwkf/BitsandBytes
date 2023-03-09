@@ -1,0 +1,303 @@
+/* mailer style */
+// @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@400;600&family=Big+Shoulders+Stencil+Text&family=Inter:wght@400;600&display=swap');
+
+* {
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	// padding: 0;
+	// margin: ;
+}
+
+body {
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	// font-size: 16px;
+	background-color: #f5f5f5;
+}
+
+html {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	font-size: 16px;
+}
+
+table  {
+	text-align: center;
+	border-collapse: collapse;
+	mso-table-lspace: 0;
+	mso-table-rspace: 0;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0 0 1rem;
+}
+
+p {
+	margin: 0 0 1rem;
+	line-height: 24px;
+
+	// &:last-of-type {
+	// 	margin: 0;
+	// }
+}
+
+a {
+	text-decoration: none;
+
+	&:hover {
+		color: #000000;
+		p {
+			font-weight: 500;
+		}
+	}
+	&:active {
+		color: #000000;
+		p {
+			font-weight: 500;
+		}
+	}
+	&:visited {
+		color: #000000;
+		p {
+			font-weight: 500;
+		}
+	}
+
+	font-weight: 500;
+}
+
+.header {
+	margin-top: 20px;
+
+	.issue-date-container {
+		margin-top: 20px;
+		width: 100%;
+		border: 1px solid #000000;
+		background-color: white;
+		text-align: center;
+		text-transform: uppercase;
+		font-size: 25px;
+		letter-spacing: 0.05em;
+		line-height: 100%;
+		font-family: 'Big Shoulders Display', sans-serif;
+		padding: 7.5px 0;
+
+		.issue-counter {
+			margin-right: 15px;
+		}
+
+		.date {
+			margin-left: 15px;
+		}
+	}
+}
+
+.content-container {
+	font-family: 'Inter', sans-serif;
+	margin-top: 20px;
+	padding: 40px;
+	background-color: white;
+	min-height: 500px;
+	text-align: left;
+
+	.sign-off-container {
+		margin-top: 30px;
+		display: inline-block;
+		.img-container {
+			float: left;
+			width: 73px;
+			height: 73px;
+			border: 1px solid #000000;
+			border-radius: 50%;
+
+			img {
+				border-radius: 50%;
+				width: 100%;
+			}
+		}
+
+		.sign-off {
+			margin-top: 12px;
+			margin-left: 10px;
+			display: inline-block;
+		}
+	}
+
+	.subscriber-container {
+		margin-top: 30px;
+		padding: 30px 40px;
+		background: #f5f5f5;
+		border: 1px solid #000000;
+
+		h4 {
+			font-size: 1rem;
+		}
+
+		a {
+			display: inline-block;
+			text-decoration: none;
+			border-bottom: 2px solid #000000;
+		}
+	}
+
+	p {
+		font-size: 1rem;
+		font-weight: 400;
+		font-family: 'Inter', sans-serif;
+	}
+
+	.section-header-container {
+		text-align: center;
+		padding-top: 40px;
+
+		img {
+			width: 34px;
+			height: auto;
+		}
+
+		.section-header {
+			margin-top: 30px;
+			height: 36px;
+			width: 100%;
+			position: relative;
+
+			h2 {
+				font-family: 'Big Shoulders Stencil Text', sans-serif;
+				font-size: 30px;
+				position: relative;
+				display: inline-block;
+				z-index: 1;
+				padding: 0 30px;
+				text-transform: uppercase;
+				background-color: white;
+			}
+
+			&::before {
+				position: absolute;
+				content: '';
+				margin: 17px 0;
+				height: 1px;
+				overflow: hidden;
+				top: 0;
+				left: 0;
+				width: 173px;
+				background-color: #D9D9D9;
+				z-index: 0;
+			}
+
+			&::after {
+				content: '';
+				position: absolute;
+				overflow: hidden;
+				margin: 17px 0;
+				height: 1px;
+				top: 0;
+				right: 0;
+				background-color: #D9D9D9;
+				width: 173px;
+				z-index: 0;
+			}
+		}
+	}
+
+	.section-card {
+		margin-top: 30px;
+
+		&::after {
+			content: '';
+			display: block;
+			width: 100%;
+			height: 30px;
+			border-bottom: 1px solid #D9D9D9;
+		}
+
+		&:last-child {
+			&::after {
+				content: '';
+				display: none;
+				width: 100%;
+				height: 30px;
+				border-bottom: none;
+			}
+		}
+
+		.section-image {
+			overflow: hidden;
+			img {
+				width: 100%;
+			}
+		}
+
+		.section-content {
+			h2 {
+				font-weight: 600;
+				font-family: 'inter', sans-serif;
+				margin-bottom: 0;
+			}
+
+			.section-byline {
+				padding: 10px 0 5px;
+
+				.byline-img {
+					// display: inline-block;
+					overflow: hidden;
+					float: left;
+					width: 50px;
+					height: 50px;
+					border-radius: 50%;
+					border: 1px solid #000000;
+					background-color: #f5f5f5;
+					z-index: 1;
+
+					img {
+						border-radius: 50%;
+					}
+				}
+				.byline {
+					margin-left: 55px;
+				}
+				p {
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 700px) {
+	table,thead,tbody,th,td,tr {
+		margin: 0;
+		padding: 0 16px;
+	}
+
+	table {
+		width: 100% !important;
+	}
+
+	td,tr {
+		border-collapse: collapse;
+		vertical-align: top;
+		border: 0;
+		box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+	}
+
+	tr {
+		width: 100%;
+	}
+
+	.header {
+		img {
+			width: 100%;
+		}
+	}
+}
+
