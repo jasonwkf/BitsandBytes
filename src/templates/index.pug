@@ -9,168 +9,228 @@ html(lang="en")
 		meta(name="viewport", content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no")
 		title Bites & Bytes
 		link(rel='icon', type='image/png', sizes='32x32', href='./images/favicon.png')
-		link(rel="preconnect" href="https://fonts.googleapis.com")
-		link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
-		link(href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@400;600&family=Big+Shoulders+Stencil+Text&family=Inter:wght@400;500;600&display=swap" rel="stylesheet")
+		//- link(rel="preconnect" href="https://fonts.googleapis.com")
+		//- link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+		//- link(href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@400;600&family=Big+Shoulders+Stencil+Text&family=Inter:wght@400;500;600&display=swap" rel="stylesheet")
 		link(rel='stylesheet' href='css/main.css')
 			//- include /src/emailer/style.css
 		//- style
 			include /src/scss/main.css
 	body
-		table(width="600" border="0" cellpadding="0" cellspacing="0" align="center")
+		table(border="0" cellpadding="0" cellspacing="0" width="100%")
 			tr
-				td
-					.header
-						img(src="/images/header.jpg")
-						.issue-date-container <span class="issue-counter"> Issue No. 1</span> | <span class="date">March 2023</span>
+				td(width="100%" align="center" valign="top" bgcolor="#f5f5f5" height="30")
 			tr
-				td
-					.content-container
-						p Dear Colleagues,
-						p I am excited to introduce our inaugural tech newsletter, brought to you by SPH Tech. This monthly newsletter serves as a platform to keep everyone in the organisation up-to-date on the activities within Tech Group. Our goal is to demystify the work that we do and enhance collaboration between departments by fostering open and transparent communications.
-						p In these newsletters, we will be sharing updates on the projects we're working on, highlighting new technologies and tools, and providing insights into the challenges and opportunities that lie ahead. We believe that by fostering a better understanding of the role technology plays in our organisation, we can work together to drive innovation and success.
-						p I encourage you to read the newsletter and reach out to us with any questions or feedback. We're always looking for ways to improve and create value and impact for our organisation.
-						p Sincerely,
-						.sign-off-container
-							.img-container
-								img(src="/images/ceo.png")
-							.sign-off
-								p
-									strong Kaythaya Maw
-									| <br/>C.T.O
-						.subscriber-container
-							h4
-								a(href="") CLICK HERE&nbsp;
-								| TO BECOME A SUBSCRIBER
-							p This Newsletter is meant to be sent to the company every month. To continue receiving this newsletter, please remember to opt-in. We don’t want to send you anything you might not agree to receive.
-							p Hope to count you among our readers <3
+				td(width="100%" align="center" valign="top" bgcolor="#f5f5f5")
+					table(border="0" cellpadding="0" cellspacing="0" style="max-width:600px; width: 100%")
+						tr
+							td
+								.header
+									img(src="images/header.jpg")
+									.issue-date-container <span class="issue-counter"> Issue No. 1</span> | <span class="date">March 2023</span>
+						tr
+							td
+								.content-container
+									p Dear Colleagues,
+									p I am excited to introduce our inaugural tech newsletter, brought to you by SPH Tech. This monthly newsletter serves as a platform to keep everyone in the organisation up-to-date on the activities within Tech Group. Our goal is to demystify the work that we do and enhance collaboration between departments by fostering open and transparent communications.
+									p In these newsletters, we will be sharing updates on the projects we're working on, highlighting new technologies and tools, and providing insights into the challenges and opportunities that lie ahead. We believe that by fostering a better understanding of the role technology plays in our organisation, we can work together to drive innovation and success.
+									p I encourage you to read the newsletter and reach out to us with any questions or feedback. We're always looking for ways to improve and create value and impact for our organisation.
+									p Sincerely,
+									.sign-off-container
+										.img-container
+											img(src="images/ceo.png")
+										.sign-off
+											p
+												strong Kaythaya Maw
+												| <br/>C.T.O
+									.subscriber-container
+										h4
+											a(href="") CLICK HERE&nbsp;
+											| TO BECOME A SUBSCRIBER
+										p This Newsletter is meant to be sent to the company every month. To continue receiving this newsletter, please remember to opt-in. We don’t want to send you anything you might not agree to receive.
+										p Hope to count you among our readers <3
+						tr
+							td
+								.content-container
+									.section-header-container
+										img(src="images/number-icon.jpg")
+										.section-header
+											h2 #Numbers
+									.section-card
+										ul.figures-container
+											li.col-1
+												h1.xl 4,324,345
+												p Cumulated page views for ST, BT, ZB.sg, ZB.com, BH, TM
+										.divider
+										ul.figures-container
+											li.col-3
+												h1.lg 749,000
+												p Active digital subscribers this month
+											li.col-3
+												h1.lg >99%
+												p Tier 1 Website uptime this month
+											li.col-3
+												h1.lg 0
+												p Incidents this month
+										.clear
+						tr
+							td
+								.content-container
+									.section-header-container
+										img(src="images/techhighlights-icon.jpg")
+										.section-header
+											h2 #techhighlights
+									.section-card
+										.section-image
+											img(src="images/highlight-image-holder.jpg")
+										.section-content
+											h2 The Research Recap: What UX Research Group Achieved in 2022
+											.section-byline
+												.byline-img
+													img(src="images/byline-img.jpg", alt="")
+												.byline
+													p
+														strong Basil Lee Jiahao
+													p UX Research
+											p Meet our UX Research Group: The unsung heroes behind the scenes who work tirelessly to understand our users and create better products.
+											p With their dedication to user-centered design, our UX research group plays a critical role in driving innovation and success. Here’s what they achieved in 2022!
+											a(href="#") Read more
+									.section-card
+										.section-image
+											img(src="images/data-img.jpg")
+										.section-content
+											h2 The Power of Real-Time Data: SPH's New First-Party Analytics Tool
+											.section-byline
+												.byline-img
+													img(src="images/byline-img-2.jpg", alt="")
+												.byline
+													p
+														strong Loh Li Wei
+													p Data Product
+											p Meet our UX Research Group: The unsung heroes behind the scenes who work tirelessly to understand our users and create better products.
+											p With their dedication to user-centered design, our UX research group plays a critical role in driving innovation and success. Here’s what they achieved in 2022!
+											a(href="#") Read more
+						tr
+							td
+								.content-container
+									.section-header-container
+										img(src="images/techupdate-icon.jpg")
+										.section-header
+											h2 #techupdates
+									.section-card
+										.section-image
+											img(src="images/techupdate-img-1.jpg")
+										.section-content
+											h2 Are you Slacking at work? Here’s why you should.
+											.section-byline
+												.byline-img
+													img(src="images/liang-moung.jpg", alt="")
+												.byline
+													p
+														strong Liang Moung
+													p FR
+											p Slack is the go-to communication and collaboration tool for many businesses, including recently, SPH Media. With over 300 members from Tech using Slack since last March and over 1500 members in newsrooms since November, it's clear that Slack is transforming the way we work.
+											p As we continue to adapt to a rapidly changing work landscape, how will tools like Slack play an increasingly important role in how we communicate and collaborate?
+											a(href="#") Read more
+									.section-card
+										.section-image
+											img(src="images/techupdate-img-2.jpg")
+										.section-content
+											h2 How SPH Media Improved Our Development Process with Testing Automation
+											.section-byline
+												.byline-img
+													img(src="images/ding.jpg", alt="")
+												.byline
+													p
+														strong Ding Lit Hwang
+													p QA
+											p As a tech department, we face the challenges of maintaining high-quality products while meeting tight deadlines. That's why we partnered with Cognizant to implement testing automation to help us improve our development process.
+											p Our QA testing team has automated more than 6,500 test cases, accounting for 70% coverage of total test cases and a reduction in the time to run sanity and regression tests—without the need for manual intervention—from four to six hours to 1.5 hours!
+											a(href="#") Read more
+						tr
+							td
+								.content-container
+									.section-header-container
+										img(src="images/techtips-icon.jpg")
+										.section-header
+											h2 #techtips
+									.section-card
+										.section-image
+											img(src="images/techtip-img.jpg")
+										.section-content
+											h2 Zoom meeting rooms: How to Use it Like a Pro
+											.section-byline
+												.byline-img
+													img(src="images/anna.jpg", alt="")
+												.byline
+													p
+														strong Anna Karla Salgado Ramos
+													p Digital Workplace Services
+											p Ready to take your Zoom skills to the next level? Check out our latest article on how to use Zoom Rooms like a pro! With 18 new Zoom Rooms rolled out throughout the News Centre and Print Centre, it's easier than ever to communicate, collaborate and be productive.
+											p Click through to access our super useful guides and tips on launching Zoom Rooms, in-meeting controls, scheduling meetings, and more!
+											a(href="#") Read more
+						tr
+							td
+								.content-container
+									.section-header-container
+										img(src="images/launchpad-icon.jpg")
+										.section-header
+											h2 #launchpad
+									.section-card
+										table(style="text-align: left; width: 100%;")
+											tr(style="border: 1px solid #d9d9d9;")
+												th(style="width: 50%;")
+													div(style="margin: 4px; background: black; color: white; padding: 8px 30px; font-size:25px; font-family: 'Big Shoulders Display', sans-serif; text-transform: uppercase; text-align: center; font-weight: 500;") shipped 🚀
+												th(style="width: 50%;")
+													div(style="margin: 2px; background: white; color: #d9d9d9; padding: 8px 30px; font-size:25px; font-family: 'Big Shoulders Display', sans-serif; text-transform: uppercase; text-align: center; font-weight: 500;") Building now
+											tr
+												td(style="width: 50%; height: 53px; font-weight: 400;")
+													span(style="font-weight: 500; font-size: 18px;") [BT]&nbsp;
+													| Name of the project
+												td(style="width: 50%; height: 53px; text-align:right;")
+													a(href="#" target="_blank" style="font-weight: 500; font-size: 16px;") See live →
+											tr
+												td(style="width: 50%; height: 53px; font-weight: 400;")
+													a(style="font-weight: 500; font-size: 18px;") [ST]&nbsp;
+													| Name of the project
+												td(style="width: 50%; height: 53px; text-align:right;")
+													a(href="#" target="_blank" style="font-weight: 500; font-size: 16px;") See live →
+											tr
+												td(style="width: 50%; height: 53px; font-weight: 400;")
+													span(style="font-weight: 500; font-size: 18px;") [TM]&nbsp;
+													| Name of the project
+												td(style="width: 50%; height: 53px; text-align:right;")
+													a(href="#" target="_blank" style="font-weight: 500; font-size: 16px;") See live →
+										table(style="text-align: left; width: 100%; margin:30px 0 0;")
+											tr(style="border: 1px solid #d9d9d9;")
+												th(style="width: 50%;")
+													div(style="margin: 2px; background: white; color: #d9d9d9; padding: 8px 30px; font-size:25px; font-family: 'Big Shoulders Display', sans-serif; text-transform: uppercase; text-align: center; font-weight: 500;") shipped 🚀
+												th(style="width: 50%;")
+													div(style="margin: 4px; background: black; color: white; padding: 8px 30px; font-size:25px; font-family: 'Big Shoulders Display', sans-serif; text-transform: uppercase; text-align: center; font-weight: 500;") Building now
+											tr
+												td(style="width: 50%; height: 53px; font-weight: 400; color: #404040;")
+													span(style="font-weight: 500; font-size: 18px;") [BT]&nbsp;
+													| Name of the project
+												td(style="width: 50%; height: 53px; text-align:right;")
+													a(href="#" target="_blank" style="font-weight: 500; font-size: 16px;") Learn more →
+											tr
+												td(style="width: 50%; height: 53px; font-weight: 400; color:#404040;")
+													a(style="font-weight: 500; font-size: 18px;") [ST]&nbsp;
+													| Name of the project
+												td(style="width: 50%; height: 53px; text-align:right;")
+													a(href="#" target="_blank" style="font-weight: 500; font-size: 16px;") Learn more →
+											tr
+												td(style="width: 50%; height: 53px; font-weight: 400; color:#404040;")
+													span(style="font-weight: 500; font-size: 18px;") [TM]&nbsp;
+													| Name of the project
+												td(style="width: 50%; height: 53px; text-align:right;")
+													a(href="#" target="_blank" style="font-weight: 500; font-size: 16px;") Learn more →
+						tr
+							td
+								ul.footer-container
+									li(style="float: left; padding-top: 2px;") 2023 Bits and Bytes
+									li(style="float: right;")
+										img(style="width:30px; margin-left:10px;" src="images/sphTechLogo.jpg")
+									li(style="float: right; padding-top: 2px;") Made with love by SPH Tech
 			tr
-				td
-					.content-container
-						.section-header-container
-							img(src="/images/number-icon.jpg")
-							.section-header
-								h2 #Numbers
-			tr
-				td
-					.content-container
-						.section-header-container
-							img(src="/images/techhighlights-icon.jpg")
-							.section-header
-								h2 #techhighlights
-						.section-card
-							.section-image
-								img(src="/images/highlight-image-holder.jpg")
-							.section-content
-								h2 The Research Recap: What UX Research Group Achieved in 2022
-								.section-byline
-									.byline-img
-										img(src="/images/byline-img.jpg", alt="")
-									.byline
-										p
-											strong Basil Lee Jiahao
-										p UX Research
-								p Meet our UX Research Group: The unsung heroes behind the scenes who work tirelessly to understand our users and create better products.
-								p With their dedication to user-centered design, our UX research group plays a critical role in driving innovation and success. Here’s what they achieved in 2022!
-								a(href="#") Read more
-						.section-card
-							.section-image
-								img(src="/images/data-img.jpg")
-							.section-content
-								h2 The Power of Real-Time Data: SPH's New First-Party Analytics Tool
-								.section-byline
-									.byline-img
-										img(src="/images/byline-img-2.jpg", alt="")
-									.byline
-										p
-											strong Loh Li Wei
-										p Data Product
-								p Meet our UX Research Group: The unsung heroes behind the scenes who work tirelessly to understand our users and create better products.
-								p With their dedication to user-centered design, our UX research group plays a critical role in driving innovation and success. Here’s what they achieved in 2022!
-								a(href="#") Read more
-			tr
-				td
-					.content-container
-						.section-header-container
-							img(src="/images/techupdate-icon.jpg")
-							.section-header
-								h2 #techupdates
-						.section-card
-							.section-image
-								img(src="/images/highlight-image-holder.jpg")
-							.section-content
-								h2 The Research Recap: What UX Research Group Achieved in 2022
-								.section-byline
-									.byline-img
-										img(src="/images/byline-img.jpg", alt="")
-									.byline
-										p
-											strong Basil Lee Jiahao
-										p UX Research
-								p Meet our UX Research Group: The unsung heroes behind the scenes who work tirelessly to understand our users and create better products.
-								p With their dedication to user-centered design, our UX research group plays a critical role in driving innovation and success. Here’s what they achieved in 2022!
-								a(href="#") Read more
-						.section-card
-							.section-image
-								img(src="/images/highlight-image-holder.jpg")
-							.section-content
-								h2 The Research Recap: What UX Research Group Achieved in 2022
-								.section-byline
-									.byline-img
-										img(src="/images/byline-img.jpg", alt="")
-									.byline
-										p
-											strong Basil Lee Jiahao
-										p UX Research
-								p Meet our UX Research Group: The unsung heroes behind the scenes who work tirelessly to understand our users and create better products.
-								p With their dedication to user-centered design, our UX research group plays a critical role in driving innovation and success. Here’s what they achieved in 2022!
-								a(href="#") Read more
-			tr
-				td
-					.content-container
-						.section-header-container
-							img(src="/images/techtips-icon.jpg")
-							.section-header
-								h2 #techtips
-						.section-card
-							.section-image
-								img(src="/images/highlight-image-holder.jpg")
-							.section-content
-								h2 The Research Recap: What UX Research Group Achieved in 2022
-								.section-byline
-									.byline-img
-										img(src="/images/byline-img.jpg", alt="")
-									.byline
-										p
-											strong Basil Lee Jiahao
-										p UX Research
-								p Meet our UX Research Group: The unsung heroes behind the scenes who work tirelessly to understand our users and create better products.
-								p With their dedication to user-centered design, our UX research group plays a critical role in driving innovation and success. Here’s what they achieved in 2022!
-								a(href="#") Read more
-						.section-card
-							.section-image
-								img(src="/images/highlight-image-holder.jpg")
-							.section-content
-								h2 The Research Recap: What UX Research Group Achieved in 2022
-								.section-byline
-									.byline-img
-										img(src="/images/byline-img.jpg", alt="")
-									.byline
-										p
-											strong Basil Lee Jiahao
-										p UX Research
-								p Meet our UX Research Group: The unsung heroes behind the scenes who work tirelessly to understand our users and create better products.
-								p With their dedication to user-centered design, our UX research group plays a critical role in driving innovation and success. Here’s what they achieved in 2022!
-								a(href="#") Read more
-			tr
-				td
-					.content-container
-						.section-header-container
-							img(src="/images/launchpad-icon.jpg")
-							.section-header
-								h2 #launchpad
-			tr
-				td
-					.footer-container
-						p 2023 Bits and Bytes
-						p Made with love by SPH Tech
+				td(height="150" width="100%" bgcolor="#f5f5f5")

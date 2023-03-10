@@ -35,5 +35,8 @@
     "stylelint": "^15.2.0",
     "stylelint-config-standard": "^19.0.0",
     "yargs": "^17.4.1"
+  },
+  "devDependencies": {
+    "gulp-inline-css": "^4.0.0"
   }
 }

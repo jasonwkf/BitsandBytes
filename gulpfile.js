@@ -12,6 +12,7 @@ const fs = require('file-system');
 const data = require('gulp-data');
 const argv = require('yargs').argv;
 const isProduction = argv.prod;
+const inlineCss = require('gulp-inline-css');
 // const eslint = require('gulp-eslint');
 // const concat = require('gulp-concat');
 // babel = require('gulp-babel')
@@ -167,9 +168,17 @@ function views() {
       }
     }))
     .pipe(gulp.dest('./site/'))
+    // .pipe(inlineCss({
+    //   applyStyleTags: true,
+    //   applyLinkTags: true,
+    //   removeStyleTags: true,
+    //   removeLinkTags: true
+    // }))
+    // .pipe(gulp.dest('./site/'))
     .pipe(connect.reload())
   )
 }
+
 // for emailer
 // function emailerViews() {
 //   var sources = [
