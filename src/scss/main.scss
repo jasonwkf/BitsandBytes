@@ -62,7 +62,7 @@ p {
 
 a {
 	text-decoration: none;
-	color: #000000;
+	color: #000000 !important;
 
 	&:hover {
 		color: #000000;
@@ -224,7 +224,8 @@ a {
 
 	.section-card {
 		margin-top: 30px;
-
+		max-width: 520px;
+		width: 100%;
 		// &::after {
 		// 	content: '';
 		// 	display: block;
@@ -370,8 +371,8 @@ a {
 
 @media only screen and (max-width: 600px) {
 	table,thead,tbody,th,td,tr {
-		margin: 0;
-		padding: 0 16px;
+		margin: 0;;
+		padding: 0;
 	}
 
 	table {

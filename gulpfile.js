@@ -168,13 +168,13 @@ function views() {
       }
     }))
     .pipe(gulp.dest('./site/'))
-    .pipe(inlineCss({
-      applyStyleTags: true,
-      applyLinkTags: true,
-      removeStyleTags: true,
-      removeLinkTags: true
-    }))
-    .pipe(gulp.dest('./site/'))
+    // .pipe(inlineCss({
+    //   applyStyleTags: true,
+    //   applyLinkTags: true,
+    //   removeStyleTags: true,
+    //   removeLinkTags: true
+    // }))
+    // .pipe(gulp.dest('./site/'))
     .pipe(connect.reload())
   )
 }
