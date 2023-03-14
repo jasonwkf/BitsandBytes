@@ -3,7 +3,7 @@ yarn-error.log
 # git ignore node module
 .DS_Store
 node_modules
-**/site
+
 
 # local env files
 .env.local
