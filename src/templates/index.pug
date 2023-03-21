@@ -1,5 +1,5 @@
 doctype html
-html(lang="en")
+html(lang="en" xlmns="http://wwww.w3.org/1999/xhtml")
 	head
 		meta
 		meta(charset="utf-8")
@@ -8,21 +8,12 @@ html(lang="en")
 		meta(name="keywords", content="")
 		meta(name="viewport", content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no")
 		title Bites & Bytes
-		link(rel='icon', type='image/png', sizes='32x32', href='./images/favicon.png')
-		//- link(rel="preconnect" href="https://fonts.googleapis.com")
-		//- link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
-		//- link(href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@400;600&family=Big+Shoulders+Stencil+Text&family=Inter:wght@400;500;600&display=swap" rel="stylesheet")
 		link(rel='stylesheet' href='css/main.css')
-			//- include /src/emailer/style.css
-		//- style
-			include /src/scss/main.css
-	body
+	body(style="padding:0; margin:0;")
 		table(border="0" cellpadding="0" cellspacing="0" width="100%")
 			tr
-				td(width="100%" align="center" valign="top" bgcolor="#f5f5f5" height="30")
-			tr
 				td(width="100%" align="center" valign="top" bgcolor="#f5f5f5")
-					table(border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:600px;")
+					table(border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:600px; width: 100%; margin-top:30px")
 						tr
 							td
 								.header
@@ -33,7 +24,7 @@ html(lang="en")
 								.content-container
 									p Dear Colleagues,
 									p I am excited to introduce our inaugural tech newsletter, brought to you by SPH Tech. This monthly newsletter serves as a platform to keep everyone in the organisation up-to-date on the activities within Tech Group. Our goal is to demystify the work that we do and enhance collaboration between departments by fostering open and transparent communications.
-									p In these newsletters, we will be sharing updates on the projects we're working on, highlighting new technologies and tools, and providing insights into the challenges and opportunities that lie ahead. We believe that by fostering a better understanding of the role technology plays in our organisation, we can work together to drive innovation and success.
+									p In these newsletters, we will be sharing updates on our key projects and initiatives, highlighting new technologies and tools, and providing insights on how digital can improve the way we work, operate and collaborate. We believe that by fostering a better understanding of the expanding role technology plays in our organisation, we can work together to drive innovation and success. As a live example of rapidly expanding possibilities enabled by tech, most images in this newsletter issue are created through Generative AI technology using the DALL-E tool.
 									p I encourage you to read the newsletter and reach out to us with any questions or feedback. We're always looking for ways to improve and create value and impact for our organisation.
 									p Sincerely,
 									.sign-off-container
@@ -45,9 +36,9 @@ html(lang="en")
 												| <br/>C.T.O
 									.subscriber-container
 										h4
-											a(href="") CLICK HERE&nbsp;
-											| TO BECOME A SUBSCRIBER
-										p This Newsletter is meant to be sent to the company every month. To continue receiving this newsletter, please remember to opt-in. We don’t want to send you anything you might not agree to receive.
+											a(href="") Click here&nbsp;
+											| for newsletter sign-up
+										p We don't want to send you anything you might not agree to receive. Don't miss out on the upcoming issues and be kept in the loop about the latest tech developments happening in our organisation.
 										p Hope to count you among our readers &#60;3
 						tr
 							td
@@ -62,21 +53,96 @@ html(lang="en")
 									.section-card
 										ul.figures-container
 											li.col-1
-												h1.xl 4,324,345
-												p(style="margin-bottom: 0") Cumulated page views for ST, BT, ZB.sg, ZB.com, BH, TM
+												h1.xl 381,508,943
+												p(style="margin-bottom: 0") Total Pageviews for ST, BT, ZB.sg, ZB.com, BH and TM for Feb 2023
+												span(style="display: inline-block; height: 34px; padding:5px 34px 0; position: relative; color:#C41313; font-weight:500; font-size:16px;")
+													img(src='images/downtrend-icon.jpg' style="width: 24px; position: absolute; left: 0; top: 5px;")
+													| -6,5% vs last month
 										.divider-20
 										table(border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:520px; margin-top:20px;")
-											tr(valign="top" )
-												td(width="33%" style="text-align: left; border-right: 1px solid #D9D9D9;")
-													h1.lg 749,000
-													p Active digital subscribers this month
-												td(width="33%" style="text-align: left; border-right: 1px solid #D9D9D9; padding-left: 20px;")
-													h1.lg >99%
-													p Tier 1 Website uptime this month
-												td(width="33%" style="text-align: left;padding-left: 20px;")
-													h1.lg 0
-													p Incidents this month
-										.clear
+											tr(valign="top")
+												td(width="35%" style="text-align: left; border-right: 1px solid #D9D9D9; padding-right: 15px;")
+													h1.lg >&nbsp;98%
+													p(style="margin:0") Tier 1 mobile apps users with no crashes
+												td(width="35%" style="text-align: left; padding: 0 15px;")
+													h1.lg >&nbsp;99%
+													p(style="margin:0") Tier 1 website uptime
+										.divider-20
+										table(border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:520px; margin-top:20px;")
+											tr(valign="top")
+												td(width="33%" style="text-align: left; border-right: 1px solid #D9D9D9; padding: 0 15px 0px;")
+													h1.md 0
+													p Major Incidents
+												td(width="33%" style="text-align: left; border-right: 1px solid #D9D9D9; padding-left: 15px;")
+													h1.md 2
+													p Priority 1 incidents
+												td(width="33%" style="text-align: left; padding-left: 15px;")
+													h1.md 2
+													p Priority 2 incidents
+						tr
+							td
+								.content-container
+									.section-header-container
+										img(src="https://share1.cloudhq-mkt3.net/5dc8be67c885cd.jpeg")
+										.section-header
+											span(style="display: inline-block; position: absolute; margin:17px 0; height:1px; overflow: hidden; top: 0; left: 0; background: #D9D9D9; z-index:0; width:143px;")
+											img(src="https://share1.cloudhq-mkt3.net/1960801b326dba.jpeg" style="height: 26px; margin: 5px 0; width: auto; z-index: 1; position: relative;")
+											span(style="display: inline-block; position: absolute; margin:17px 0; height:1px; overflow: hidden; top: 0; right: 0; background: #D9D9D9; z-index:0; width:143px;")
+									.section-card
+										table(border="0" cellpadding="0" cellspacing="0" width="100%" style="text-align: left; width: 100%;")
+											tr(style="border: 1px solid #d9d9d9;")
+												//- styling for the table header
+												td
+													table(border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:520px; width: 100%;")
+														tr
+															td
+																th(style="width: 50%;")
+																	div(style="margin: 4px; background: black; color: white; padding: 8px 30px; font-size:150%; font-family: 'Big Shoulders Display', Arial Narrow, Impact, sans-serif; text-transform: uppercase; text-align: center; font-weight: 500;") shipped 🚀
+																th(style="width: 50%;")
+																	div(style="margin: 2px; background: white; color: #d9d9d9; padding: 8px 30px; font-size:150%; font-family: 'Big Shoulders Display', Arial Narrow, Impact, sans-serif; text-transform: uppercase; text-align: center; font-weight: 500;") Building now
+											tr
+												td
+													table(border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:520px; width: 100%; text-align:left;")
+														tr(valign="top" height="60")
+															td(style="width: 70%; height: 53px; font-weight: 400; color: #404040; margin-top:")
+																div(style="margin-top:10px;")
+																	span(style="font-weight: 500; font-size: 18px; width: 80%;") [BT]&nbsp;
+																	|	myBT: a personalisation feature that lets readers choose topics of interest
+															td(style="width: 30%; text-align: right;")
+																div(style="margin-top:10px;")
+																	span
+																		a(href="https://www.businesstimes.com.sg/mybt/intro" target="_blank" style="font-weight: 500; font-size: 16px;") See live →
+										table(style="text-align: left; width: 100%; margin:30px 0;")
+											tr(style="border: 1px solid #d9d9d9;")
+												td
+													table(border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:520px; width: 100%;")
+														tr
+															td
+																th(style="width: 50%;")
+																	div(style="margin: 2px; background: white; color: #d9d9d9; padding: 8px 30px; font-size:150%; font-family: 'Big Shoulders Display', Arial Narrow, Impact, sans-serif; text-transform: uppercase; text-align: center; font-weight: 500;") shipped 🚀
+																th(style="width: 50%;")
+																	div(style="margin: 4px; background: black; color: white; padding: 8px 30px; font-size:150%; font-family: 'Big Shoulders Display', Arial Narrow, Impact, sans-serif; text-transform: uppercase; text-align: center; font-weight: 500;") Building now
+											tr
+												td
+													table(border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:520px; width: 100%; text-align: left;")
+														tr(valign="top" height="60")
+															td(style="width: 70%; height: 53px; font-weight: 400; color: #404040;")
+																div(style="margin-top:10px;")
+																	span(style="font-weight: 500; font-size: 18px;") [CRSM Re-arch]&nbsp;
+																	| Enable Consumer division in workflow optimization, innovation support, omni-channel contact center, and subscriber self-service empowerment.
+															td(style="width: 30%; height: 53px; text-align:right;")
+																div(style="margin-top:10px;")
+																	a(href="https://drive.google.com/file/d/1FH72I6GjyT0mc2bzrux4BdjMtihnC2gx/view" target="_blank" style="font-weight: 500; font-size: 16px;") Learn more →
+														tr(valign="top" height="60")
+															td(style="width: 70%; height: 53px; font-weight: 400; color:#404040;")
+																div(style="margin-top:10px;")
+																	a(style="font-weight: 500; font-size: 18px;") [UECMS]&nbsp;
+																	| CUE launch for ZB to accelerate the transformation towards a digital-first workflow
+															td(style="width: 30%; height: 53px; text-align:right;")
+																div(style="margin-top:10px;")
+																	a(href="https://docs.google.com/presentation/d/1z20CXoBs2xMB-apfaJGnqT9pFYX3A7h1JtcEoLvNaU8/edit" target="_blank" style="font-weight: 500; font-size: 16px;") Learn more →
+										p Want your project to appear here? Reach out to&nbsp;
+												a(href="mailto:azhar@sph.com.sg" target="_blank" style="font-weight: 500; font-size: 16px;") azhar@sph.com.sg
 						tr
 							td
 								.content-container
@@ -88,7 +154,7 @@ html(lang="en")
 											span(style="display: inline-block; position: absolute; margin:17px 0; height:1px; overflow: hidden; top: 0; right: 0; background: #D9D9D9; z-index:0; width:143px;")
 									.section-card
 										.section-image
-											img(src="https://share1.cloudhq-mkt3.net/f938273dec2708.jpeg")
+											img(src="https://share1.cloudhq-mkt3.net/aa5c4ee1fd13f3.jpeg")
 										.section-content
 											h2 The Research Recap: What UX Research Group Achieved in 2022
 											.section-byline
@@ -114,8 +180,8 @@ html(lang="en")
 													p
 														strong Loh Li Wei
 													p Data Product
-											p Meet our UX Research Group: The unsung heroes behind the scenes who work tirelessly to understand our users and create better products.
-											p With their dedication to user-centered design, our UX research group plays a critical role in driving innovation and success. Here’s what they achieved in 2022!
+											p Our data team has once again demonstrated their expertise and innovation with the successful implementation of their "Neuron" project.
+											p The project involves a real-time data pipeline that captures events as they happen, providing valuable insights and improving decision-making processes. Congratulations to the entire data team for their outstanding work!
 											a(href="#") Read more
 						tr
 							td
@@ -137,14 +203,14 @@ html(lang="en")
 												.byline
 													p
 														strong Liang Moung
-													p FR
-											p Slack is the go-to communication and collaboration tool for many businesses, including recently, SPH Media. With over 300 members from Tech using Slack since last March and over 1500 members in newsrooms since November, it's clear that Slack is transforming the way we work.
-											p As we continue to adapt to a rapidly changing work landscape, how will tools like Slack play an increasingly important role in how we communicate and collaborate?
+													p Future-Ready & Tech Partnership
+											p Slack is the go-to communication and collaboration tool for many businesses, including recently, SPH Media. We started with over 300 members from Tech using Slack from March 2022.
+											p Recently, in November 2022, we onboarded our newsroom colleagues, bringing our total number of Slack users to over 1500. It's clear that Slack is transforming the way we work. As we continue to adapt to a rapidly changing work landscape, how will tools like Slack play an increasingly important role in how we communicate and collaborate?
 											a(href="#") Read more
 										.divider
 									.section-card
 										.section-image
-											img(src="https://share1.cloudhq-mkt3.net/f20350ca084e52.jpeg")
+											img(src="https://share1.cloudhq-mkt3.net/97b9068b21ed41.jpeg")
 										.section-content
 											h2 How SPH Media Improved Our Development Process with Testing Automation
 											.section-byline
@@ -153,9 +219,9 @@ html(lang="en")
 												.byline
 													p
 														strong Ding Lit Hwang
-													p QA
-											p As a tech department, we face the challenges of maintaining high-quality products while meeting tight deadlines. That's why we partnered with Cognizant to implement testing automation to help us improve our development process.
-											p Our QA testing team has automated more than 6,500 test cases, accounting for 70% coverage of total test cases and a reduction in the time to run sanity and regression tests—without the need for manual intervention—from four to six hours to 1.5 hours!
+													p Governance, Quality Assurance & RPA
+											p As a tech department, we face the challenges of maintaining high-quality products while meeting tight deadlines. That's why we partnered with Cognizant to enhance testing automation to help us improve our development process.
+											p Our Test Engineering team has automated more than 6,500 test cases, accounting for 70% coverage of total test cases and a reduction in the time to run sanity and regression tests—without the need for manual intervention—from four to six hours to 1.5 hours!
 											a(href="#") Read more
 						tr
 							td
@@ -170,7 +236,7 @@ html(lang="en")
 										.section-image
 											img(src="https://share1.cloudhq-mkt3.net/2564439a201be5.jpeg")
 										.section-content
-											h2 Zoom meeting rooms: How to Use it Like a Pro
+											h2 How to ZOOM in Office Like a Pro!
 											.section-byline
 												.byline-img
 													img(src="https://share1.cloudhq-mkt3.net/8b4c4eeeb20b6b.jpeg", alt="")
@@ -178,74 +244,48 @@ html(lang="en")
 													p
 														strong Anna Karla Salgado Ramos
 													p Digital Workplace Services
-											p Ready to take your Zoom skills to the next level? Check out our latest article on how to use Zoom Rooms like a pro! With 18 new Zoom Rooms rolled out throughout the News Centre and Print Centre, it's easier than ever to communicate, collaborate and be productive.
-											p Click through to access our super useful guides and tips on launching Zoom Rooms, in-meeting controls, scheduling meetings, and more!
+											p Ready to take your Zoom skills to the next level? Check out our latest article on how to use Zoom Rooms like a pro! With 41 new Zoom Rooms rolled out throughout the News Centre and Print Centre, it's easier than ever to communicate and collaborate.
+											p Click through to access our super useful guides and tips to transform into a power user of Zoom Rooms!
 											a(href="#") Read more
 						tr
 							td
 								.content-container
 									.section-header-container
-										img(src="https://share1.cloudhq-mkt3.net/5dc8be67c885cd.jpeg")
+										img(src="images/techevent-icon.jpg")
 										.section-header
-											span(style="display: inline-block; position: absolute; margin:17px 0; height:1px; overflow: hidden; top: 0; left: 0; background: #D9D9D9; z-index:0; width:143px;")
-											img(src="https://share1.cloudhq-mkt3.net/8efad0ca909951.jpeg" style="height: 26px; margin: 5px 0; width: auto; z-index: 1; position: relative;")
-											span(style="display: inline-block; position: absolute; margin:17px 0; height:1px; overflow: hidden; top: 0; right: 0; background: #D9D9D9; z-index:0; width:143px;")
+											span(style="display: inline-block; position: absolute; margin:17px 0; height:1px; overflow: hidden; top: 0; left: 0; background: #D9D9D9; width:143px;")
+											img(src="images/techevents-header.jpg" style="height: 26px; margin: 5px 0; width: auto; position: relative;")
+											span(style="display: inline-block; position: absolute; margin:17px 0; height:1px; overflow: hidden; top: 0; right: 0; background: #D9D9D9; width:143px;")
 									.section-card
-										table(style="text-align: left; width: 100%;")
-											tr(style="border: 1px solid #d9d9d9;")
-												th(style="width: 50%;")
-													div(style="margin: 4px; background: black; color: white; padding: 8px 30px; font-size:25px; font-family: 'Big Shoulders Display', Arial Narrow, Impact, sans-serif; text-transform: uppercase; text-align: center; font-weight: 500;") shipped 🚀
-												th(style="width: 50%;")
-													div(style="margin: 2px; background: white; color: #d9d9d9; padding: 8px 30px; font-size:25px; font-family: 'Big Shoulders Display', Arial Narrow, Impact, sans-serif; text-transform: uppercase; text-align: center; font-weight: 500;") Building now
-											tr
-												td(style="width: 50%; height: 53px; font-weight: 400;")
-													span(style="font-weight: 500; font-size: 18px;") [BT]&nbsp;
-													| Name of the project
-												td(style="width: 50%; height: 53px; text-align:right;")
-													a(href="#" target="_blank" style="font-weight: 500; font-size: 16px;") See live →
-											tr
-												td(style="width: 50%; height: 53px; font-weight: 400;")
-													a(style="font-weight: 500; font-size: 18px;") [ST]&nbsp;
-													| Name of the project
-												td(style="width: 50%; height: 53px; text-align:right;")
-													a(href="#" target="_blank" style="font-weight: 500; font-size: 16px;") See live →
-											tr
-												td(style="width: 50%; height: 53px; font-weight: 400;")
-													span(style="font-weight: 500; font-size: 18px;") [TM]&nbsp;
-													| Name of the project
-												td(style="width: 50%; height: 53px; text-align:right;")
-													a(href="#" target="_blank" style="font-weight: 500; font-size: 16px;") See live →
-										table(style="text-align: left; width: 100%; margin:30px 0 0;")
-											tr(style="border: 1px solid #d9d9d9;")
-												th(style="width: 50%;")
-													div(style="margin: 2px; background: white; color: #d9d9d9; padding: 8px 30px; font-size:25px; font-family: 'Big Shoulders Display', Arial Narrow, Impact, sans-serif; text-transform: uppercase; text-align: center; font-weight: 500;") shipped 🚀
-												th(style="width: 50%;")
-													div(style="margin: 4px; background: black; color: white; padding: 8px 30px; font-size:25px; font-family: 'Big Shoulders Display', Arial Narrow, Impact, sans-serif; text-transform: uppercase; text-align: center; font-weight: 500;") Building now
-											tr
-												td(style="width: 50%; height: 53px; font-weight: 400; color: #404040;")
-													span(style="font-weight: 500; font-size: 18px;") [BT]&nbsp;
-													| Name of the project
-												td(style="width: 50%; height: 53px; text-align:right;")
-													a(href="#" target="_blank" style="font-weight: 500; font-size: 16px;") Learn more →
-											tr
-												td(style="width: 50%; height: 53px; font-weight: 400; color:#404040;")
-													a(style="font-weight: 500; font-size: 18px;") [ST]&nbsp;
-													| Name of the project
-												td(style="width: 50%; height: 53px; text-align:right;")
-													a(href="#" target="_blank" style="font-weight: 500; font-size: 16px;") Learn more →
-											tr
-												td(style="width: 50%; height: 53px; font-weight: 400; color:#404040;")
-													span(style="font-weight: 500; font-size: 18px;") [TM]&nbsp;
-													| Name of the project
-												td(style="width: 50%; height: 53px; text-align:right;")
-													a(href="#" target="_blank" style="font-weight: 500; font-size: 16px;") Learn more →
+										.section-image
+											img(src="images/adelinetiah.jpg")
+										.section-content
+											h2 Refresh Your Professional Self with Curious.d’s April Session!
+											.section-byline
+												.byline-img
+													img(src="images/charlieang.jpg", alt="")
+												.byline
+													p
+														strong Charlie Ang
+													p Future-Ready & Tech Partnership
+											p Amidst the relentless waves of digital disruption, industry shifts and company transformations, we must constantly refresh our mindsets and skillsets to stay on course.
+											p Join the “Reinvent 4.0” book talk by Adeline Tiah, followed by fireside chat with EMTM Editor-in-Chief Wong Wei Kong, to plug into keeping our professional selves relevant and resilient.
+											a(href="" style="display: inline-block;  background:#000000; height:47px; border-radius:60px; color: #ffffff !important; font-size: 14px; text-decoration: none; border:none; padding: 15px 20px; font-weight: 700; font-family: 'Inter', 'Roboto', sans-serif;") More details
+						tr
+							td
+								.content-container
+									.section-card(style="margin-top: 0;")
+										.section-content
+											h2(style="margin-bottom: 10px;") Feedback is gift
+											p We strive to create a newsletter that is collaborative and inclusive of all SPH Media employees.
+											p Have an idea of topic or want us to cover a story?
+											a(href="" style="margin-top:15px; display: inline-block;  background:#000000; height:47px; border-radius:60px; color: #ffffff !important; font-size: 14px; text-decoration: none; border:none; padding: 15px 20px; font-weight: 700; font-family: 'Inter', 'Roboto', sans-serif;") Drop us a line
 						tr
 							td(height="50" style="vertical-align: bottom;")
-								img(src="https://share1.cloudhq-mkt3.net/762b96fcfe7bc7.jpeg" style="width: 100%;")
-								//- ul.footer-container
-								//- 	li(style="float: left; padding-top: 2px;") 2023 Bits and Bytes
-								//- 	li(style="float: right; padding-top: 2px;") Made with love by SPH Tech
-								//- 		span
-								//- 			img(style="width:30px; margin-left:10px;" src="images/sphTechLogo.jpg")
-			tr
+								img.desktop-footer(src="images/footerimg.png" style="width: 100%;")
+								img.mobile-footer(src="images/footerresp.png" style="width: 100%;")
+						tr
+							td(height="40")
+								p(style="font-size: 13px; margin-top:20px; color:#0000007f;") Please do not share any part of this newsletter with parties outside of SPH Media.
+			//- tr
 				td(height="150" width="100%" bgcolor="#f5f5f5")

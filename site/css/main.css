@@ -7,8 +7,7 @@
 
 body {
   text-align: center;
-  margin: 0;
-  padding: 0;
+  font-family: "inter", sans-serif;
   background-color: white;
 }
 
@@ -38,7 +37,12 @@ h6 {
 }
 
 h1.lg {
-  font-size: 35px;
+  font-size: 42px;
+  font-weight: 500;
+}
+
+h1.md {
+  font-size: 30px;
   font-weight: 500;
 }
 
@@ -114,12 +118,12 @@ a:visited p {
   margin-top: 20px;
   padding: 40px;
   background-color: white;
-  min-height: 500px;
+  min-height: 250px;
   text-align: left;
 }
 
 .content-container .sign-off-container {
-  margin-top: 30px;
+  margin-top: 14px;
   display: inline-block;
 }
 
@@ -179,6 +183,7 @@ a:visited p {
   margin-top: 30px;
   height: 36px;
   width: 100%;
+  overflow: hidden;
   position: relative;
 }
 
@@ -202,10 +207,14 @@ a:visited p {
 
 .content-container .section-card .section-image {
   overflow: hidden;
+  max-width: 520px;
+  height: 200px;
+  width: 100%;
 }
 
 .content-container .section-card .section-image img {
   width: 100%;
+  height: auto;
 }
 
 .content-container .section-card .section-content h2 {
@@ -269,10 +278,6 @@ a:visited p {
   color: #404040;
 }
 
-.content-container .section-card .clear {
-  clear: both;
-}
-
 .content-container .divider {
   clear: both;
   width: 100%;
@@ -305,6 +310,14 @@ a:visited p {
   height: 30px;
 }
 
+.mobile-footer {
+  display: none;
+}
+
+.desktop-footer {
+  display: block;
+}
+
 @media only screen and (max-width: 600px) {
   table, thead, tbody, th, td, tr {
     margin: 0;
@@ -323,7 +336,35 @@ a:visited p {
   tr {
     width: 100%;
   }
+  h1.lg {
+    font-size: 42px;
+    font-weight: 500;
+  }
+  h1.md {
+    font-size: 30px;
+    font-weight: 500;
+  }
+  h1.xl {
+    font-size: 50px;
+    font-weight: 500;
+  }
   .header img {
     width: 100%;
+  }
+  .content-container {
+    padding: 40px 20px;
+  }
+  .content-container p {
+    font-size: 15px;
+    line-height: 170%;
+  }
+  .content-container .subscriber-container h4 {
+    font-size: 15px;
+  }
+  .mobile-footer {
+    display: block;
+  }
+  .desktop-footer {
+    display: none;
   }
 }

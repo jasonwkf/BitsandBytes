@@ -167,7 +167,8 @@ function views() {
         isProd: isProduction
       }
     }))
-    .pipe(gulp.dest('./site/'))
+    .pipe(gulp.dest(ASSETS_DEST + '/'))
+    // .pipe(gulp.src(ASSETS_DEST + '/*.html'))
     // .pipe(inlineCss({
     //   applyStyleTags: true,
     //   applyLinkTags: true,
@@ -178,7 +179,6 @@ function views() {
     .pipe(connect.reload())
   )
 }
-
 // for emailer
 // function emailerViews() {
 //   var sources = [
