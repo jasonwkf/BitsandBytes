@@ -8,7 +8,7 @@
 body {
   text-align: center;
   font-family: "inter", sans-serif;
-  background-color: white;
+  background-color: #ffffff !important;
 }
 
 html {
@@ -95,7 +95,7 @@ a:visited p {
   margin-top: 20px;
   width: 100%;
   border: 1px solid #000000;
-  background-color: white;
+  background-color: #ffffff !important;
   text-align: center;
   text-transform: uppercase;
   font-size: 25px;
@@ -117,7 +117,7 @@ a:visited p {
   font-family: "Inter", "Roboto", sans-serif;
   margin-top: 20px;
   padding: 40px;
-  background-color: white;
+  background-color: #ffffff !important;
   min-height: 250px;
   text-align: left;
 }
@@ -196,7 +196,7 @@ a:visited p {
   z-index: 1;
   padding: 0 30px;
   text-transform: uppercase;
-  background-color: white;
+  background-color: #ffffff !important;
 }
 
 .content-container .section-card {
