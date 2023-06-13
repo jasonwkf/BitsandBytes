@@ -11,16 +11,6 @@ body {
   background-color: #ffffff !important;
 }
 
-.body, .darkmode, .darkmode div { /* With class body on the body tag, and all elements represented here that have a background color */
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#ffffff)) !important;
-  background-image: -o-linear-gradient(#ffffff, #ffffff) !important;
-  background-image: linear-gradient(#ffffff, #ffffff) !important;
-}
-
-.darkmode p { /* Add other selectors for other text elements */
-  -webkit-text-fill-color: #404040 !important;
-}
-
 html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -128,6 +118,8 @@ a:visited p {
   margin-top: 20px;
   padding: 40px;
   background-color: #ffffff !important;
+  background-image: url("./images/whitebkg.jpg");
+  background-repeat: repeat;
   min-height: 250px;
   text-align: left;
 }
@@ -328,6 +320,14 @@ a:visited p {
   display: block;
 }
 
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #ffffff;
+  }
+  .content-container {
+    background-color: #ffffff;
+  }
+}
 @media only screen and (max-width: 600px) {
   table, thead, tbody, th, td, tr {
     margin: 0;

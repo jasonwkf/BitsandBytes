@@ -5,11 +5,13 @@ html(lang="en" xlmns="http://wwww.w3.org/1999/xhtml")
 		meta(charset="utf-8")
 		meta(name="description", content="")
 		meta(name="author", content="")
-		meta(name="color-scheme" content="only")
+		meta(name="color-scheme" content="light only")
 		meta(name="keywords", content="")
 		meta(name="viewport", content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no")
 		title Bites & Bytes
-		link(rel='stylesheet' href='css/main.css')
+		//- link(rel='stylesheet' href='css/main.css')
+		style
+			include /src/scss/main.css
 	body(style="padding:0; margin:0; background: #ffffff;")
 		table(border="0" cellpadding="0" cellspacing="0" width="100%")
 			tr
@@ -22,7 +24,7 @@ html(lang="en" xlmns="http://wwww.w3.org/1999/xhtml")
 									.issue-date-container <span class="issue-counter"> Issue #1</span> | <span class="date">March 2023</span>
 						tr
 							td
-								.content-container(style="background-color: #ffffff !important; background-image: url('../images/whitebkg.jpg'); background-repeat: repeat;")
+								.content-container
 									p Dear Colleagues,
 									p I am excited to introduce our inaugural tech newsletter, brought to you by SPH Tech. This monthly newsletter serves as a platform to keep everyone in the organisation up-to-date on the activities within Tech Group. Our goal is to demystify the work that we do and enhance collaboration between departments by fostering open and transparent communications.
 									p In these newsletters, we will be sharing updates on our key projects and initiatives, highlighting new technologies and tools, and providing insights on how digital can improve the way we work, operate and collaborate. We believe that by fostering a better understanding of the expanding role technology plays in our organisation, we can work together to drive innovation and success. As a live example of rapidly expanding possibilities enabled by tech, most images in this newsletter issue are created through Generative AI technology using the DALL-E tool.
@@ -47,9 +49,9 @@ html(lang="en" xlmns="http://wwww.w3.org/1999/xhtml")
 									.section-header-container
 										img(src="https://share1.cloudhq-mkt3.net/0297370e14b24f.jpeg")
 										.section-header
-											span(style="display: inline-block; position: absolute; margin:17px 0; height:1px; overflow: hidden; top: 0; left: 0; background: #D9D9D9; z-index:0; width:143px;")
-											img(src="https://share1.cloudhq-mkt3.net/807e416f7c040d.jpeg" style="height: 26px; margin: 5px 0; width: auto; z-index: 1; position: relative;")
-											span(style="display: inline-block; position: absolute; margin:17px 0; height:1px; overflow: hidden; top: 0; right: 0; background: #D9D9D9; z-index:0; width:143px;")
+											span(style="display: inline-block; position: absolute; margin:17px 0; height:1px; overflow: hidden; top: 0; left: 0; background: #D9D9D9; width:143px;")
+											img(src="https://share1.cloudhq-mkt3.net/807e416f7c040d.jpeg" style="height: 26px; margin: 5px 0; width: auto; position: relative;")
+											span(style="display: inline-block; position: absolute; margin:17px 0; height:1px; overflow: hidden; top: 0; right: 0; background: #D9D9D9; width:143px;")
 										span()
 									.section-card
 										ul.figures-container
@@ -57,7 +59,7 @@ html(lang="en" xlmns="http://wwww.w3.org/1999/xhtml")
 												h1.xl 381,508,943
 												p(style="margin-bottom: 0") Total Pageviews for ST, BT, ZB.sg, ZB.com, BH and TM for Feb 2023
 												span(style="display: inline-block; height: 34px; padding:5px 34px 0; position: relative; color:#C41313; font-weight:500; font-size:16px;")
-													img(src='images/downtrend-icon.jpg' style="width: 24px; position: absolute; left: 0; top: 5px;")
+													img(src='https://share1.cloudhq-mkt3.net/5f9630bc79f16e.jpeg' style="width: 24px; position: absolute; left: 0; top: 5px;")
 													| -6,5% vs last month
 										.divider-20
 										table(border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:520px; margin-top:20px;")
@@ -86,13 +88,12 @@ html(lang="en" xlmns="http://wwww.w3.org/1999/xhtml")
 									.section-header-container
 										img(src="https://share1.cloudhq-mkt3.net/5dc8be67c885cd.jpeg")
 										.section-header
-											span(style="display: inline-block; position: absolute; margin:17px 0; height:1px; overflow: hidden; top: 0; left: 0; background: #D9D9D9; z-index:0; width:143px;")
-											img(src="https://share1.cloudhq-mkt3.net/1960801b326dba.jpeg" style="height: 26px; margin: 5px 0; width: auto; z-index: 1; position: relative;")
-											span(style="display: inline-block; position: absolute; margin:17px 0; height:1px; overflow: hidden; top: 0; right: 0; background: #D9D9D9; z-index:0; width:143px;")
+											span(style="display: inline-block; position: absolute; margin:17px 0; height:1px; overflow: hidden; top: 0; left: 0; background: #D9D9D9; width:143px;")
+											img(src="https://share1.cloudhq-mkt3.net/1960801b326dba.jpeg" style="height: 26px; margin: 5px 0; width: auto; position: relative;")
+											span(style="display: inline-block; position: absolute; margin:17px 0; height:1px; overflow: hidden; top: 0; right: 0; background: #D9D9D9; width:143px;")
 									.section-card
 										table(border="0" cellpadding="0" cellspacing="0" width="100%" style="text-align: left; width: 100%;")
 											tr(style="border: 1px solid #d9d9d9;")
-												//- styling for the table header
 												td
 													table(border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:520px; width: 100%;")
 														tr
@@ -105,7 +106,7 @@ html(lang="en" xlmns="http://wwww.w3.org/1999/xhtml")
 												td
 													table(border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:520px; width: 100%; text-align:left;")
 														tr(valign="top" height="60")
-															td(style="width: 70%; height: 53px; font-weight: 400; color: #404040; margin-top:")
+															td(style="width: 70%; height: 53px; font-weight: 400; color: #404040;")
 																div(style="margin-top:10px;")
 																	span(style="font-weight: 500; font-size: 18px; width: 80%;") [BT]&nbsp;
 																	|	myBT: a personalisation feature that lets readers choose topics of interest
@@ -150,9 +151,9 @@ html(lang="en" xlmns="http://wwww.w3.org/1999/xhtml")
 									.section-header-container
 										img(src="https://share1.cloudhq-mkt3.net/307870376a4e33.jpeg")
 										.section-header
-											span(style="display: inline-block; position: absolute; margin:17px 0; height:1px; overflow: hidden; top: 0; left: 0; background: #D9D9D9; z-index:0; width:143px;")
-											img(src="https://share1.cloudhq-mkt3.net/e35631b188e030.jpeg" style="height: 26px; margin: 5px 0; width: auto; z-index: 1; position: relative;")
-											span(style="display: inline-block; position: absolute; margin:17px 0; height:1px; overflow: hidden; top: 0; right: 0; background: #D9D9D9; z-index:0; width:143px;")
+											span(style="display: inline-block; position: absolute; margin:17px 0; height:1px; overflow: hidden; top: 0; left: 0; background: #D9D9D9; width:143px;")
+											img(src="https://share1.cloudhq-mkt3.net/e35631b188e030.jpeg" style="height: 26px; margin: 5px 0; width: auto; position: relative;")
+											span(style="display: inline-block; position: absolute; margin:17px 0; height:1px; overflow: hidden; top: 0; right: 0; background: #D9D9D9; width:143px;")
 									.section-card
 										.section-image
 											img(src="https://share1.cloudhq-mkt3.net/aa5c4ee1fd13f3.jpeg")
@@ -190,9 +191,9 @@ html(lang="en" xlmns="http://wwww.w3.org/1999/xhtml")
 									.section-header-container
 										img(src="https://share1.cloudhq-mkt3.net/66643d1a754156.jpeg")
 										.section-header
-											span(style="display: inline-block; position: absolute; margin:17px 0; height:1px; overflow: hidden; top: 0; left: 0; background: #D9D9D9; z-index:0; width:143px;")
-											img(src="https://share1.cloudhq-mkt3.net/c576e7bdcfd0d5.jpeg" style="height: 26px; margin: 5px 0; width: auto; z-index: 1; position: relative;")
-											span(style="display: inline-block; position: absolute; margin:17px 0; height:1px; overflow: hidden; top: 0; right: 0; background: #D9D9D9; z-index:0; width:143px;")
+											span(style="display: inline-block; position: absolute; margin:17px 0; height:1px; overflow: hidden; top: 0; left: 0; background: #D9D9D9; width:143px;")
+											img(src="https://share1.cloudhq-mkt3.net/c576e7bdcfd0d5.jpeg" style="height: 26px; margin: 5px 0; width: auto; position: relative;")
+											span(style="display: inline-block; position: absolute; margin:17px 0; height:1px; overflow: hidden; top: 0; right: 0; background: #D9D9D9; width:143px;")
 									.section-card
 										.section-image
 											img(src="https://share1.cloudhq-mkt3.net/8a6d990b09dece.jpeg")
@@ -230,9 +231,9 @@ html(lang="en" xlmns="http://wwww.w3.org/1999/xhtml")
 									.section-header-container
 										img(src="https://share1.cloudhq-mkt3.net/6884fe8045ab15.jpeg")
 										.section-header
-											span(style="display: inline-block; position: absolute; margin:17px 0; height:1px; overflow: hidden; top: 0; left: 0; background: #D9D9D9; z-index:0; width:143px;")
-											img(src="https://share1.cloudhq-mkt3.net/6c9b886a1de8c2.jpeg" style="height: 26px; margin: 5px 0; width: auto; z-index: 1; position: relative;")
-											span(style="display: inline-block; position: absolute; margin:17px 0; height:1px; overflow: hidden; top: 0; right: 0; background: #D9D9D9; z-index:0; width:143px;")
+											span(style="display: inline-block; position: absolute; margin:17px 0; height:1px; overflow: hidden; top: 0; left: 0; background: #D9D9D9; width:143px;")
+											img(src="https://share1.cloudhq-mkt3.net/6c9b886a1de8c2.jpeg" style="height: 26px; margin: 5px 0; width: auto; position: relative;")
+											span(style="display: inline-block; position: absolute; margin:17px 0; height:1px; overflow: hidden; top: 0; right: 0; background: #D9D9D9; width:143px;")
 									.section-card
 										.section-image
 											img(src="https://share1.cloudhq-mkt3.net/2564439a201be5.jpeg")
@@ -252,19 +253,19 @@ html(lang="en" xlmns="http://wwww.w3.org/1999/xhtml")
 							td
 								.content-container
 									.section-header-container
-										img(src="images/techevent-icon.jpg")
+										img(src="https://share1.cloudhq-mkt3.net/3d2338e7fc0fa5.jpeg")
 										.section-header
 											span(style="display: inline-block; position: absolute; margin:17px 0; height:1px; overflow: hidden; top: 0; left: 0; background: #D9D9D9; width:143px;")
-											img(src="images/techevents-header.jpg" style="height: 26px; margin: 5px 0; width: auto; position: relative;")
+											img(src="https://share1.cloudhq-mkt3.net/a4e490777c1162.jpeg" style="height: 26px; margin: 5px 0; width: auto; position: relative;")
 											span(style="display: inline-block; position: absolute; margin:17px 0; height:1px; overflow: hidden; top: 0; right: 0; background: #D9D9D9; width:143px;")
 									.section-card
 										.section-image
-											img(src="images/adelinetiah.jpg")
+											img(src="https://ci6.googleusercontent.com/proxy/p87o0aNgiaRhfqt5yhGatJcBgv3w--fR1SBlRRW51Snp2ec3V-E8BQCbrdTuMuvjmiRy3T81BpKpK3pGYTSfeNo2E9VjeP2OIfYlXLBeC9K9xIHCmMY=s0-d-e1-ft#https://jasonwkf.github.io/BitsandBytes/site/images/adelinetiah.jpg")
 										.section-content
 											h2 Refresh Your Professional Self with Curious.d’s April Session!
 											.section-byline
 												.byline-img
-													img(src="images/charlieang.jpg", alt="")
+													img(src="https://ci3.googleusercontent.com/proxy/Fim1nkYbEUhJ3vCc9YPsmEQkeR6bZ1YKt1NGFR4WQgyzdU8wf71Pt5fR3ybvoJHtOy5CPsEEDCT3DNM2CUWwmSp2jM_JylbkUYdy3AlE0VyzDLzYaA=s0-d-e1-ft#https://jasonwkf.github.io/BitsandBytes/site/images/charlieang.jpg", alt="")
 												.byline
 													p
 														strong Charlie Ang
@@ -283,7 +284,7 @@ html(lang="en" xlmns="http://wwww.w3.org/1999/xhtml")
 											a(href="https://forms.gle/5PCJ2ziWP7vdP3gd6" target="_blank" style="margin-top:15px; display: inline-block;  background:#000000; height:47px; border-radius:60px; color: #ffffff !important; font-size: 14px; text-decoration: none; border:none; padding: 15px 20px; font-weight: 700; font-family: 'Inter', 'Roboto', sans-serif;") Drop us a line
 						tr
 							td(height="50" style="vertical-align: bottom;")
-								img.desktop-footer(src="images/footerimg.png" style="width: 100%;")
+								img.desktop-footer(src="https://share1.cloudhq-mkt3.net/56d530b639e89c.png" style="width: 100%;")
 								img.mobile-footer(src="images/footerresp.png" style="width: 100%;")
 						tr
 							td(height="40")

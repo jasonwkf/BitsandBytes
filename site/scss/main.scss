@@ -14,13 +14,6 @@ body {
 	background-color: #ffffff !important;
 }
 
-.body, .darkmode, .darkmode div { /* With class body on the body tag, and all elements represented here that have a background color */
-	background-image: linear-gradient(#ffffff,#ffffff) !important;
-}
-
-.darkmode p { /* Add other selectors for other text elements */
-	-webkit-text-fill-color: #404040 !important;
-}
 
 html {
 	-webkit-box-sizing: border-box;
@@ -127,8 +120,8 @@ a {
 	margin-top: 20px;
 	padding: 40px;
 	background-color: #ffffff !important;
-	// background-image: url('../images/whitebkg.jpg');
-	// background-repeat: repeat;
+	background-image: url('./images/whitebkg.jpg');
+	background-repeat: repeat;
 	min-height: 250px;
 	text-align: left;
 
@@ -333,6 +326,16 @@ a {
 
 .desktop-footer {
 	display: block;
+}
+
+@media (prefers-color-scheme: dark) {
+	body {
+		background-color: #ffffff;
+	}
+
+	.content-container {
+		background-color: #ffffff;
+	}
 }
 
 @media only screen and (max-width: 600px) {
